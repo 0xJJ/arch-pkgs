@@ -29,14 +29,14 @@ build()
 package()
 {
 	cd "${srcdir}/${_pkgname}-${pkgver}"
-  install -Dm 755 "build/spin2cpp" "${pkgdir}/usr/bin/spin2cpp"
-  install -Dm 755 "build/flexspin" "${pkgdir}/usr/bin/flexspin"
-  install -Dm 755 "build/flexcc" "${pkgdir}/usr/bin/flexcc"
-  install -Dm 755 "spinconvert/spinconvert.tcl" "${pkgdir}/usr/bin/spinconvert"
-  install -dm755 "${pkgdir}/usr/share/spin2cpp"
-  cp -r include "${pkgdir}/usr/share/spin2cpp/"
-  install -Dm 755 "COPYING" "${pkgdir}//usr/share/licenses/${_pkgname}/COPYING"
-  install -Dm 755 "COPYING.LIB" "${pkgdir}//usr/share/licenses/${_pkgname}/COPYING.LIB"
+	install -Dm 755 "build/spin2cpp" "${pkgdir}/usr/bin/spin2cpp"
+	install -Dm 755 "build/flexspin" "${pkgdir}/usr/bin/flexspin"
+	install -Dm 755 "build/flexcc" "${pkgdir}/usr/bin/flexcc"
+	install -Dm 755 "spinconvert/spinconvert.tcl" "${pkgdir}/usr/bin/spinconvert"
+	install -dm755 "${pkgdir}/usr/share/spin2cpp"
+	cp -r include "${pkgdir}/usr/share/spin2cpp/"
+	install -Dm 755 "COPYING" "${pkgdir}//usr/share/licenses/${_pkgname}/COPYING"
+	install -Dm 755 "COPYING.LIB" "${pkgdir}//usr/share/licenses/${_pkgname}/COPYING.LIB"
 }
 
 #
